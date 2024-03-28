@@ -36,7 +36,6 @@ public class BotHandler {
             calendar.set(Calendar.MINUTE,0);
             calendar.set(Calendar.SECOND,0);
             Date startOfDay = calendar.getTime();
-
             BTC btc = new BTC();
 
             List<BTC> btcList = btcService.findAllByRegistrationDateBetween(startOfDay, today);
